@@ -4,6 +4,7 @@
   "description": "semantic-release-test",
   "main": "src/index.js",
   "scripts": {
+    "build": "echo build success.",
     "semantic-release": "dotenv -c -- semantic-release"
   },
   "publishConfig": {
