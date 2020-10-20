@@ -25,6 +25,7 @@
     "src"
   ],
   "devDependencies": {
+    "conventional-changelog-cmyr-config": "^1.2.3",
     "dotenv-cli": "^4.0.0",
     "semantic-release": "^17.2.1"
   }
