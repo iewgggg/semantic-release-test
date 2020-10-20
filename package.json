@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "echo build success.",
-    "semantic-release": "dotenv -c -- semantic-release"
+    "semantic-release": "dotenv -c -- semantic-release",
+    "semantic-release:local": "dotenv -c -- semantic-release --no-ci"
   },
   "publishConfig": {
     "access": "public"
