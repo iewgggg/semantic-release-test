@@ -1,10 +1,14 @@
 {
   "name": "@anyesu/semantic-release-test",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "semantic-release-test",
   "main": "src/index.js",
   "scripts": {
     "build": "echo build success.",
+    "release:beta": "standard-version --release-as major --prerelease beta",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
     "semantic-release": "dotenv -c -- semantic-release",
     "semantic-release:local": "dotenv -c -- semantic-release --no-ci"
   },
@@ -27,6 +31,7 @@
   "devDependencies": {
     "conventional-changelog-cmyr-config": "^1.2.3",
     "dotenv-cli": "^4.0.0",
-    "semantic-release": "^17.2.1"
+    "semantic-release": "^17.2.1",
+    "standard-version": "^9.0.0"
   }
 }
