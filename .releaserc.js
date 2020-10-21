@@ -8,6 +8,12 @@ module.exports = {
       },
     ],
     "@semantic-release/npm",
+    [
+      "@semantic-release/git",
+      {
+        assets: ["package.json"],
+      },
+    ],
     "@semantic-release/github",
   ],
 };
