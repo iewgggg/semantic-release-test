@@ -1,5 +1,5 @@
 {
-  "name": "@anyesu/semantic-release-test2",
+  "name": "@anyesu/semantic-release-test",
   "version": "3.6.0",
   "description": "semantic-release-test",
   "main": "src/index.js",
