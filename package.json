@@ -12,6 +12,11 @@
     "semantic-release": "dotenv -c -- semantic-release",
     "semantic-release:local": "dotenv -c -- semantic-release --no-ci"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -30,9 +35,12 @@
     "src"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/git": "^9.0.0",
     "conventional-changelog-cmyr-config": "^1.2.3",
     "dotenv-cli": "^4.0.0",
+    "husky": "^4.3.0",
     "semantic-release": "^17.2.1",
     "standard-version": "^9.0.0"
   }
