@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "echo build success.",
+    "release": "npm run semantic-release",
     "release:beta": "standard-version --release-as major --prerelease beta",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
@@ -37,11 +38,11 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "conventional-changelog-cmyr-config": "^1.2.3",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-cmyr-config": "^2.0.4",
     "dotenv-cli": "^4.0.0",
     "husky": "^4.3.0",
-    "semantic-release": "^17.2.1",
+    "semantic-release": "^19.0.2",
     "standard-version": "^9.0.0"
   }
 }
